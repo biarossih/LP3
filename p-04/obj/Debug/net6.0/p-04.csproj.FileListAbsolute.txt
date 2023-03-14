@@ -1,0 +1,15 @@
+/home/estudante/sp306719x/p-04/bin/Debug/net6.0/p-04
+/home/estudante/sp306719x/p-04/bin/Debug/net6.0/p-04.deps.json
+/home/estudante/sp306719x/p-04/bin/Debug/net6.0/p-04.runtimeconfig.json
+/home/estudante/sp306719x/p-04/bin/Debug/net6.0/p-04.dll
+/home/estudante/sp306719x/p-04/bin/Debug/net6.0/p-04.pdb
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.csproj.AssemblyReference.cache
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.GeneratedMSBuildEditorConfig.editorconfig
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.AssemblyInfoInputs.cache
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.AssemblyInfo.cs
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.csproj.CoreCompileInputs.cache
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.dll
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/refint/p-04.dll
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.pdb
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/p-04.genruntimeconfig.cache
+/home/estudante/sp306719x/p-04/obj/Debug/net6.0/ref/p-04.dll

@@ -1,0 +1,15 @@
+/home/estudante1/sp3119858/atividade/bin/Debug/net7.0/atividade
+/home/estudante1/sp3119858/atividade/bin/Debug/net7.0/atividade.deps.json
+/home/estudante1/sp3119858/atividade/bin/Debug/net7.0/atividade.runtimeconfig.json
+/home/estudante1/sp3119858/atividade/bin/Debug/net7.0/atividade.dll
+/home/estudante1/sp3119858/atividade/bin/Debug/net7.0/atividade.pdb
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.csproj.AssemblyReference.cache
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.GeneratedMSBuildEditorConfig.editorconfig
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.AssemblyInfoInputs.cache
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.AssemblyInfo.cs
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.csproj.CoreCompileInputs.cache
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.dll
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/refint/atividade.dll
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.pdb
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/atividade.genruntimeconfig.cache
+/home/estudante1/sp3119858/atividade/obj/Debug/net7.0/ref/atividade.dll

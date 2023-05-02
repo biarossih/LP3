@@ -1,0 +1,15 @@
+/home/estudante1/Documentos/sp306719x/bin/Debug/net7.0/sp306719x
+/home/estudante1/Documentos/sp306719x/bin/Debug/net7.0/sp306719x.deps.json
+/home/estudante1/Documentos/sp306719x/bin/Debug/net7.0/sp306719x.runtimeconfig.json
+/home/estudante1/Documentos/sp306719x/bin/Debug/net7.0/sp306719x.dll
+/home/estudante1/Documentos/sp306719x/bin/Debug/net7.0/sp306719x.pdb
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.csproj.AssemblyReference.cache
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.GeneratedMSBuildEditorConfig.editorconfig
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.AssemblyInfoInputs.cache
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.AssemblyInfo.cs
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.csproj.CoreCompileInputs.cache
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.dll
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/refint/sp306719x.dll
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.pdb
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/sp306719x.genruntimeconfig.cache
+/home/estudante1/Documentos/sp306719x/obj/Debug/net7.0/ref/sp306719x.dll

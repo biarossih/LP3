@@ -1,13 +1,13 @@
 public class Transacao
 {
-    public decimal Quantia { get; }
+    public decimal Valor { get; }
     public DateTime Data { get; }
-    public string Notas { get; }
+    public string Descricao { get; }
 
-    public Transacao(decimal quantia, DateTime data, string nota)
+    public Transacao(decimal valor, DateTime data, string descricao)
     {
-        Quantia = quantia;
+        Valor = valor;
         Data = data;
-        Notas = nota;
+        Descricao = descricao;
     }
 }

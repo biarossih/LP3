@@ -1,20 +1,24 @@
 ﻿using Classes;
 
-var cartaoDeDebito = new ContaCartaodeDebito("Cartão de Débito", 100, 50);
-cartaoDeDebito.EfetuarSaque(20, DateTime.Now, "Café");
-cartaoDeDebito.EfetuarSaque(50, DateTime.Now, "Compra de Mantimentos");
-cartaoDeDebito.ExecutarTransacoesdeFimdeMes();
-cartaoDeDebito.EfetuarDeposito(27.50m, DateTime.Now, "Adicionar algum dinheiro extra para gastar");
-Console.WriteLine(cartaoDeDebito.ObterHistoricodeConta());
+Gastos alimentos = new GastosAlimentacao("BEATRIZ ROSSI DUARTE");
+alimentos.AdicionarGasto(20, DateTime.Now, "Café");
+alimentos.AdicionarGasto(50, DateTime.Now, "Compra de mantimentos");
+alimentos.AdicionarMargem();
+Console.WriteLine(alimentos.ObterHistoricoDeGastos());
 
-var poupanca = new ContadeGanhodeJuros("Conta de Poupança", 10000);
-poupanca.EfetuarDeposito(750, DateTime.Now, "Economizar dinheiro");
-poupanca.EfetuarDeposito(1250, DateTime.Now, "Adicionar mais poupança");
-poupanca.EfetuarSaque(250, DateTime.Now, "Necessário para pagar contas mensais");
-poupanca.ExecutarTransacoesdeFimdeMes();
-Console.WriteLine(poupanca.ObterHistoricodeConta());
+Gastos vestuarios = new GastosVestuario("BEATRIZ ROSSI DUARTE");
+vestuarios.AdicionarGasto(100, DateTime.Now, "Agasalho");
+vestuarios.AdicionarGasto(50, DateTime.Now, "Calça");
+vestuarios.AdicionarGasto(250, DateTime.Now, "Terno");
+vestuarios.AdicionarMargem();
+Console.WriteLine(vestuarios.ObterHistoricoDeGastos());
 
-var credito = new ContadeLinhadeCredito("Conta de Linha de Crédito", 51000);
-credito.EfetuarSaque(50000, DateTime.Now, "Necessário para pagar novo automóvel");
-credito.ExecutarTransacoesdeFimdeMes();
-Console.WriteLine(credito.ObterHistoricodeConta());
+Gastos lazer = new GastosLazer("BEATRIZ ROSSI DUARTE");
+lazer.AdicionarGasto(200, DateTime.Now, "Cinema");
+lazer.AdicionarMargem();
+Console.WriteLine(lazer.ObterHistoricoDeGastos());
+
+Gastos educacao = new GastosEducacao("BEATRIZ ROSSI DUARTE");
+educacao.AdicionarGasto(1000, DateTime.Now, "Linguagem C#");
+educacao.AdicionarMargem();
+Console.WriteLine(educacao.ObterHistoricoDeGastos());

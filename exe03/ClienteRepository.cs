@@ -2,7 +2,7 @@ using exe03.Database;
 using exe03.Models;
 using Microsoft.Data.Sqlite;
 
-namespace exe03.Repositories;
+namespace exe03.Models;
 
 class ClienteRepository {
     private readonly DatabaseConfig _databaseConfig;

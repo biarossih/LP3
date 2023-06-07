@@ -1,5 +1,5 @@
-using DBlesson.Database;
-using DBlesson.Models;
+using exe03.Database;
+using exe03.Models;
 using Microsoft.Data.Sqlite;
 
 namespace exe03.Models;
@@ -48,7 +48,7 @@ class PedidoRepository {
         command.Parameters.AddWithValue("$dataPedido", pedido.DataPedido);
         command.Parameters.AddWithValue("$peso", pedido.Peso);
         command.Parameters.AddWithValue("$codigoTransportadora", pedido.CodTransportadora);
-        command.Parameters.AddWithValue("$customer_id", pedidoClienteId.PedidoClienteId);
+        command.Parameters.AddWithValue("$pedidoClienteId", pedido.PedidoClienteId);
 
         command.ExecuteNonQuery();
         connection.Close();
@@ -78,14 +78,14 @@ class PedidoRepository {
         connection.Open();
 
         var command = connection.CreateCommand();
-        command.CommandText = "INSERT INTO Pedido VALUES ($pedId, $employee_id, $order_date, $order_weigth, $carrier_code, $customer_id)";
-        command.CommandText = "UPDATE Orders_tb SET employee_id = $employee_id, order_date = $order_date, order_weigth = $order_weigth,  carrier_code = $carrier_code, customer_id = $customer_id WHERE (order_id = $order_id)";
-        command.Parameters.AddWithValue("$order_id", order.OrderId);
-        command.Parameters.AddWithValue("$employee_id", order.EmployeeId);
-        command.Parameters.AddWithValue("$order_date", order.OrderDate);
-        command.Parameters.AddWithValue("$order_weigth", order.Weigth);
-        command.Parameters.AddWithValue("$carrier_code", order.CarrierCode);
-        command.Parameters.AddWithValue("$customer_id", order.CustomerId);
+        command.CommandText = "INSERT INTO Pedido VALUES ($pedId, $enderecoId, $dataPedido, $peso, $codigoTransportadora, $pedidoClienteId)";
+        command.CommandText = "UPDATE Pedido_tb SET enderecoId = $enderecoId, dataPedido = $dataPedido, peso = $peso,  codigoTransportadora = $codigoTransportadora, pedidoClienteId = $pedidoClienteId WHERE (pedId = $pedId)";
+        command.Parameters.AddWithValue("$pedId;", pedido.PedidoId);
+        command.Parameters.AddWithValue("$enderecoId", pedido.EnderecoId);
+        command.Parameters.AddWithValue("$dataPedido", pedido.DataPedido);
+        command.Parameters.AddWithValue("$peso", pedido.Peso);
+        command.Parameters.AddWithValue("$codigoTransportadora", pedido.codigoTransportadora);
+        command.Parameters.AddWithValue("$pedidoClienteId", pedido.pedidoClienteId);
 
         command.ExecuteNonQuery();
         connection.Close();
@@ -98,7 +98,7 @@ class PedidoRepository {
         connection.Open();
 
         var command = connection.CreateCommand();
-        command.CommandText = "DELETE FROM Order_tb WHERE (order_id = $order_id)";
+        command.CommandText = "DELETE FROM Pedido_tb WHERE (pedId = $pedId)";
         command.Parameters.AddWithValue("$id", id);
 
         command.ExecuteNonQuery();

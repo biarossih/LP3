@@ -11,9 +11,9 @@ var pedidoRepository = new PedidoRepository(dbConfig);
 var modelName = args[0];
 var modelAction = args[1];
 
-if (modelName.ToLower() == "customer") {
+if (modelName.ToLower() == "cliente") {
     if (modelAction.ToLower() == "list") {
-        Console.WriteLine("Customer List");
+        Console.WriteLine("Cliente List");
         foreach ( var cliente in clienteRepository.GetAll()) {
             Console.WriteLine($"{cliente.ClienteId}, {cliente.Endereco}, {cliente.Cidade}, {cliente.Regiao}, {cliente.CodigoPostal}, {cliente.Pais},  {cliente.Telefone}");
         }
@@ -34,17 +34,17 @@ if (modelName.ToLower() == "customer") {
     if(modelAction.ToLower() == "list") {
         Console.WriteLine("Pedidos List");
         foreach (var pedido in pedidoRepository.GetAll()) {
-            Console.WriteLine($"{order.OrderId}, {order.EmployeeId}, {order.OrderDate}, {order.Weigth}, {order.CarrierCode}, {order.CustomerId}");
+            Console.WriteLine($"{pedido.PedidoId}, {pedido.EnderecoId}, {pedido.DataPedido}, {pedido.Peso}, {pedido.CodTransportadora}, {pedido.PedidoClienteId}");
         }
     }else if (modelAction.ToLower() == "insert") {
-        Console.WriteLine("Insert new order");
-        var id = Convert.ToInt32(Console.ReadLine());
-        var employeeId = Convert.ToInt32(Console.ReadLine());
-        string orderDate = Console.ReadLine();
-        string weigth = Console.ReadLine();
-        var carrierCode = Convert.ToInt32(Console.ReadLine());
-        var customerId = Convert.ToInt32(Console.ReadLine());
-        var order = new Order(id, employeeId, orderDate, weigth, carrierCode, customerId);
-        orderRepository.Save(order);
+        Console.WriteLine("Insert new pedido");
+        var pedId = Convert.ToInt32(Console.ReadLine());
+        var enderecoId = Convert.ToInt32(Console.ReadLine());
+        string dataPedido = Console.ReadLine();
+        string peso = Console.ReadLine();
+        var codigoTransportadora = Convert.ToInt32(Console.ReadLine());
+        var pedidoClienteId = Convert.ToInt32(Console.ReadLine());
+        var pedido = new Pedido(pedId, enderecoId, dataPedido, peso, codigoTransportadora, pedidoClienteId);
+        pedidoRepository.Save(pedido);
     }
 }
